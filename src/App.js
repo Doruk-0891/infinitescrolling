@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   const renderItem = useCallback(({title}, key, ref) => {
-    return <div key={key}>{title}</div>
+    return <div ref={ref} key={key}>{title}</div>
   }, []);
 
   const getData = useCallback((query, pageNumber) => {
